@@ -16,3 +16,7 @@
 .contact-details>.marca-light{border:0;padding:0;justify-content:flex-start}
 .contact-label{display:block}
 @media(max-width:760px){.nav{min-height:118px;padding-block:10px}.official-logo{width:132px;height:97px}.official-logo img{width:201px;height:201px;left:-17px;top:-35px}html{scroll-padding-top:175px}.marca-light .official-logo{width:80px;height:57px}.marca-light .official-logo img{width:147px;height:147px;left:-25px;top:-26px}}
+/* Conserva el emblema original y sustituye el nombre por texto accesible. */
+.official-logo-arrendamiento img{clip-path:inset(0 0 44% 0)}
+.logo-caption{position:absolute;left:0;bottom:4px;width:100%;text-align:center;white-space:nowrap;color:#6b6c6e;font-family:"Arial Narrow","Segoe UI",Arial,sans-serif;font-size:13px;font-weight:800;line-height:1.2;letter-spacing:-.5px}
+@media(max-width:760px){.logo-caption{font-size:11px;bottom:4px;letter-spacing:-.4px}.marca-light .brand-name>span{letter-spacing:2px}}
