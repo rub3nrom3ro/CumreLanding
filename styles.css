@@ -141,3 +141,12 @@
   .footer-top>p{margin:0}
   .back-top{min-height:44px}
 }
+/* El aviso ocupa una fila completa debajo de las columnas de contacto. */
+.contact-privacy{grid-column:1/-1;width:100%;min-width:0;margin:0;padding-top:24px;border-top:1px solid #3b565c;color:#c2d2d5;font-size:.875rem;line-height:1.5rem;text-align:justify}
+@media(max-width:760px){.contact-privacy{text-align:left}}
+/* Un solo separador antes del aviso y un pie más próximo al contacto. */
+.contact-details>a[href^="mailto:"]{border-bottom:0}
+.contact-panel{row-gap:28px}
+.contact-section{padding-bottom:16px}
+.footer-top{padding-bottom:16px}
+.footer-top .back-top{margin-left:auto}
