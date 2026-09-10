@@ -20,3 +20,44 @@
 .official-logo-arrendamiento img{clip-path:inset(0 0 44% 0)}
 .logo-caption{position:absolute;left:0;bottom:4px;width:100%;text-align:center;white-space:nowrap;color:#6b6c6e;font-family:"Arial Narrow","Segoe UI",Arial,sans-serif;font-size:13px;font-weight:800;line-height:1.2;letter-spacing:-.5px}
 @media(max-width:760px){.logo-caption{font-size:11px;bottom:4px;letter-spacing:-.4px}.marca-light .brand-name>span{letter-spacing:2px}}
+/* Riesgos de incumplimiento: resumen de sanciones de la LFPIORPI. */
+.risks-section{background:var(--soft);border-block:1px solid var(--line)}
+.risks-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.risk-card{display:flex;flex-direction:column;gap:16px;padding:30px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}
+.risk-category{font-size:11px;font-weight:700;letter-spacing:1.2px;color:var(--muted)}
+.risk-card h3{font-size:clamp(24px,2.5vw,32px);letter-spacing:-1px}
+.risk-card>p:not(.risk-category){color:var(--muted);font-size:15px;line-height:1.75}
+.risk-card small{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.6}
+.risk-card-emphasis{border-top:4px solid var(--lime);padding-top:27px}
+.risks-note{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;margin-top:26px}
+.risks-note p{max-width:760px;color:var(--muted);font-size:12px;line-height:1.7}
+.risks-note a{flex-shrink:0;font-size:12px}
+@media(max-width:1050px){.nav nav{gap:18px}}
+@media(max-width:760px){.risks-grid{grid-template-columns:1fr;gap:16px}.risk-card{padding:24px}.risk-card-emphasis{padding-top:21px}.risks-note{flex-direction:column;gap:12px}.nav nav{gap:10px;flex-wrap:wrap}}
+/* Video: YouTube se carga únicamente después de la interacción. */
+.law-video{position:relative;aspect-ratio:16/9;max-width:960px;margin-inline:auto;overflow:hidden;border-radius:var(--radius);background:var(--ink)}
+.law-video-cover{width:100%;height:100%;object-fit:cover;object-position:center 45%;opacity:.38}
+.law-video-trigger{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:16px;width:100%;border:0;background:linear-gradient(transparent,#102f3766);color:white;font:inherit;font-size:22px;font-weight:650;cursor:pointer;padding:24px;text-align:center}
+.law-video-trigger[hidden]{display:none}
+.law-video-trigger:focus-visible{outline:3px solid var(--lime);outline-offset:-6px}
+.law-video-play{display:grid;place-items:center;width:76px;height:76px;padding-left:5px;border-radius:50%;background:var(--lime);color:var(--ink);font-size:30px}
+.law-video-trigger:hover .law-video-play{background:#ffac50}
+.law-video-trigger small{font-size:12px;font-weight:400}
+.law-video iframe{display:block;width:100%;height:100%;border:0}
+.law-video-fallback{position:absolute;inset:0;display:grid;place-items:center;color:white;font-weight:700}
+.video-followup{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;max-width:960px;margin:24px auto 0}
+.video-followup>div{text-align:right}
+.video-followup p{font-size:15px;color:var(--muted)}
+@media(max-width:760px){.law-video-trigger{gap:10px;padding:16px;font-size:17px}.law-video-play{width:52px;height:52px;font-size:22px}.law-video-trigger small{font-size:10px}.video-followup{flex-direction:column;gap:16px}.video-followup>div{text-align:left}}
+/* Importes y mensajes de riesgos para arrendadores. */
+.rental-thresholds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:24px 28px;margin-bottom:18px;background:white;border-left:4px solid var(--lime);border-radius:0 12px 12px 0}
+.rental-thresholds p{font-size:15px;color:var(--muted)}
+.rental-thresholds strong{display:block;color:var(--ink);margin-bottom:6px}
+.rental-thresholds b{color:var(--ink);white-space:nowrap}
+.risks-currency{font-size:12px;color:var(--muted);margin-bottom:16px}
+.risks-section .risk-card h3{font-size:clamp(23px,2.2vw,29px)}
+.risks-action{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:30px;padding-block:24px;border-bottom:1px solid var(--line)}
+.risks-action p{color:var(--muted)}
+.risks-action strong{color:var(--ink)}
+.risks-sources{display:flex;flex-direction:column;align-items:flex-start;flex-shrink:0}
+@media(max-width:760px){.rental-thresholds{grid-template-columns:1fr;gap:18px;padding:22px}.risks-action{flex-direction:column;align-items:flex-start}.risks-action .button{max-width:100%;white-space:normal}}
