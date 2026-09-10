@@ -159,7 +159,22 @@
   .risks-section .risk-card h3{font-size:clamp(23px,2vw,28px);line-height:1.25}
 }
 /* Advertencia visual: contraste alto y consecuencias destacadas. */
-.risks-section{background:radial-gradient(ellipse at 95% 0%,#532b32 0,transparent 55%),#171f25;color:#fff;border-top:4px solid #e56862;border-bottom:1px solid #39434b}
+/* .risks-section{background:radial-gradient(ellipse at 95% 0%,#d5d5ec 0,transparent 55%),#bbd8ef;color:#0c0c0c;border-top:4px solid #e56862;border-bottom:1px solid #39434b} */
+
+  .risks-section {
+    background: linear-gradient(
+        135deg,
+        #344b5f 0%,
+        #415d72 50%,
+        #4b6679 100%
+    );
+
+    color: #fff;
+
+    border-top: 4px solid #e56862;
+    border-bottom: 1px solid #607586;
+}  
+
 .risks-section .eyebrow{color:#ffb1a9;letter-spacing:2px}
 .risks-section .section-heading>p{color:#d3d9dd}
 .risk-title-accent{color:#ffaaa2}
