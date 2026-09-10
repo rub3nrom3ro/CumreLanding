@@ -909,8 +909,7 @@ h3 {
   .button {
     font-size: 14px;
     padding: 15px 18px;
-    display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
   }
   .hero-actions {
     gap: 17px;
