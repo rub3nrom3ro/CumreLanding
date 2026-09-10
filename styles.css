@@ -890,6 +890,15 @@ h3 {
   .contact-details > p {
     max-width: 100%;
   }
+  /* Se agregaron los siguientes dos */
+  .contact-copy > .button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-copy > .button:last-child {
+    margin-bottom: 0;
+  }
   .footer-top {
     flex-wrap: wrap;
     gap: 25px;
@@ -1605,10 +1614,12 @@ h3 {
     gap: 28px;
   }
   .contact-copy > .button {
+    width: auto;
     max-width: 100%;
-    width: 100%;
-    flex-wrap: wrap;
+    display: inline-flex;
+    align-items: center;
     gap: 8px;
+    white-space: nowrap;
   }
   .contact-details > .marca-light {
     gap: 10px;
