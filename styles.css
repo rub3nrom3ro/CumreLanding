@@ -158,3 +158,24 @@
   .risks-grid .risk-category{min-height:3.3em}
   .risks-section .risk-card h3{font-size:clamp(23px,2vw,28px);line-height:1.25}
 }
+/* Advertencia visual: contraste alto y consecuencias destacadas. */
+.risks-section{background:radial-gradient(ellipse at 95% 0%,#532b32 0,transparent 55%),#171f25;color:#fff;border-top:4px solid #e56862;border-bottom:1px solid #39434b}
+.risks-section .eyebrow{color:#ffb1a9;letter-spacing:2px}
+.risks-section .section-heading>p{color:#d3d9dd}
+.risk-title-accent{color:#ffaaa2}
+.risks-section .risks-currency{color:#bfc8cf}
+.risks-section .risk-card{background:#242e36;border:1px solid #53606a;border-top:4px solid #e58a73;padding-top:26px;box-shadow:0 14px 32px #00000026;gap:14px}
+.risks-section .risk-card-emphasis{background:#38292f;border-color:#a35a61;border-top-color:#ff827d}
+.risk-alert-icon{color:#ffaaa2;flex-shrink:0}
+.risks-section .risk-category{color:#ffbeb7;letter-spacing:1px;font-size:11px}
+.risks-section .risk-card h3{display:flex;flex-direction:column;gap:8px;letter-spacing:-.8px;margin-block:4px 8px}
+.risk-amount-from{font-size:18px;line-height:1.35;font-weight:500;color:#f2d9d6}
+.risk-amount-main{font-size:clamp(28px,2.6vw,36px);line-height:1.15;font-weight:750;color:#fff;overflow-wrap:normal}
+.risks-section .risk-card-emphasis .risk-amount-main{color:#ffb1a9}
+.risks-section .risk-card>p:not(.risk-category){color:#e0e4e7}
+.risks-section .risk-card small{color:#c2ccd3;border-top-color:#56616a}
+.risks-section .risks-action{border-bottom-color:#53606a}
+.risks-section .risks-action p,.risks-section .risks-note p{color:#c2ccd3}
+.risks-section .risks-action strong{color:#fff}
+.risks-section .risks-sources a{color:#f5d5cd;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:760px){.risks-section .risk-card{padding-top:22px}.risk-amount-main{font-size:clamp(26px,7.5vw,34px)}}
