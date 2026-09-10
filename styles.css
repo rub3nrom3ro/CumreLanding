@@ -61,3 +61,83 @@
 .risks-action strong{color:var(--ink)}
 .risks-sources{display:flex;flex-direction:column;align-items:flex-start;flex-shrink:0}
 @media(max-width:760px){.rental-thresholds{grid-template-columns:1fr;gap:18px;padding:22px}.risks-action{flex-direction:column;align-items:flex-start}.risks-action .button{max-width:100%;white-space:normal}}
+/* Adaptación por tamaño de pantalla; el contenido es compartido. */
+.hero>* ,.section-heading>* ,.contact-panel>* ,.process-layout>* ,.questions>*{min-width:0}
+@media (min-width:761px) and (max-width:1100px){
+  .hero{grid-template-columns:minmax(0,1fr);gap:32px}
+  .hero-copy{max-width:720px}
+  .hero h1{font-size:58px}
+  .hero-description{max-width:600px}
+  .hero-visual{width:100%;max-width:680px;margin:0 auto}
+  .identification-card{left:20px;right:20px;width:fit-content;max-width:calc(100% - 40px)}
+  .contact-panel{grid-template-columns:minmax(0,1fr);gap:36px}
+  .contact-copy>p:not(.eyebrow){max-width:600px}
+  .section-heading{gap:28px}
+  .section-heading>div{flex:1}
+  .section-heading>p{flex:1}
+  .focus-band>.container{flex-wrap:wrap}
+}
+@media (max-width:760px){
+  html{scroll-padding-top:150px}
+  .container{width:calc(100% - 32px)}
+  .nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:0 12px;min-height:0;padding-block:4px}
+  .nav>.marca{justify-self:start}
+  .nav .official-logo{width:110px;height:80px}
+  .nav .official-logo img{width:168px;height:168px;left:-14px;top:-29px}
+  .nav .logo-caption{font-size:9px;bottom:3px}
+  .nav-cta{min-height:44px;padding:10px 14px;font-size:13px}
+  .nav nav{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;width:100%;padding-top:0;margin-top:3px;font-size:11px;text-align:center}
+  .nav nav a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:6px 3px}
+  .hero{grid-template-columns:minmax(0,1fr);padding-block:30px 40px;gap:28px}
+  .hero h1{font-size:clamp(36px,9.5vw,58px);line-height:1.1;letter-spacing:-1.6px}
+  .hero h1 br:first-child{display:initial}
+  .hero .eyebrow{align-items:flex-start;font-size:10px;letter-spacing:1px}
+  .status-dot{flex-shrink:0;margin-top:5px}
+  .hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:12px;margin-top:24px}
+  .hero-actions .text-link{justify-content:center;min-height:44px}
+  .hero-footnote{align-items:flex-start;font-size:12px}
+  .hero-visual{height:auto;margin:0;display:flex;flex-direction:column;overflow:hidden}
+  .visual-heading{position:static;padding:18px;min-height:70px;gap:16px}
+  .hero-photo{position:static;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;opacity:1}
+  .hero-visual:after{display:none}
+  .visual-caption{position:static;padding:18px 18px 8px;font-size:19px;line-height:1.5}
+  .identification-card{position:static;order:3;transform:none;box-shadow:none;margin:8px 14px 16px;padding:14px;gap:10px;max-width:calc(100% - 28px)}
+  .identification-card>div{min-width:0}
+  .identification-card strong{font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+  .identification-card>div>span{font-size:9px;letter-spacing:.5px}
+  .mini-icon{padding:7px;flex-shrink:0}
+  .visual-bottom{position:static;order:4;height:auto;min-height:48px;padding:12px 18px;gap:12px;font-size:9px}
+  .focus-tags{flex-wrap:wrap;justify-content:flex-start;gap:14px 20px}
+  .section{padding-block:48px}
+  .section h2,.process-section h2,.contact-panel h2{font-size:clamp(28px,7.5vw,36px);line-height:1.18;letter-spacing:-1px;overflow-wrap:break-word}
+  .section-heading{margin-bottom:26px}
+  .section-heading>p{max-width:none;font-size:16px}
+  .section p[style*="text-align"]{text-align:left!important}
+  .service-grid,.risks-grid,.rental-thresholds,.process-layout,.questions,.contact-panel{grid-template-columns:minmax(0,1fr)}
+  .service-card{padding:22px 20px 0}
+  .service-card h3{font-size:24px;overflow-wrap:break-word}
+  .card-top{margin-bottom:22px}
+  .risk-card{padding:22px 20px}
+  .risk-card-emphasis{padding-top:19px}
+  .risk-card h3{line-height:1.25;overflow-wrap:break-word}
+  .rental-thresholds{padding:20px;gap:18px}
+  .law-note{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:start}
+  .law-note p{min-width:0}
+  .law-note a{grid-column:2;margin-left:0;min-height:44px;white-space:normal}
+  .risks-action .button{width:100%;min-height:48px;text-align:center}
+  .risks-sources a,.video-followup .text-link{min-height:44px}
+  .law-video-cover{display:block}
+  .process-section{padding-block:48px}
+  .process-steps li>div{min-width:0}
+  .contact-panel{padding:28px 20px;gap:28px}
+  .contact-copy>.button{max-width:100%;width:100%;flex-wrap:wrap;gap:8px}
+  .contact-details>.marca-light{gap:10px;flex-wrap:wrap}
+  .contact-details>.marca-light>.official-logo{flex:0 0 65px;width:65px;height:52px}
+  .contact-details>.marca-light>.brand-name{flex:0 1 auto;font-size:28px;min-width:0}
+  .marca-light .brand-name>span{font-size:9px;letter-spacing:1px}
+  .contact-details>a>span{min-width:0}
+  .contact-details>a{font-size:14px}
+  .footer-top{gap:20px}
+  .footer-top>p{margin:0}
+  .back-top{min-height:44px}
+}
