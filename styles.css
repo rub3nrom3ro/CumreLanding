@@ -150,3 +150,11 @@
 .contact-section{padding-bottom:16px}
 .footer-top{padding-bottom:16px}
 .footer-top .back-top{margin-left:auto}
+
+/* Las tres tarjetas de riesgos comparten una fila en escritorio. */
+@media(min-width:1024px){
+  .risks-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+  .risks-grid .risk-card{min-width:0;padding-inline:24px}
+  .risks-grid .risk-category{min-height:3.3em}
+  .risks-section .risk-card h3{font-size:clamp(23px,2vw,28px);line-height:1.25}
+}
