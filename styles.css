@@ -1836,3 +1836,51 @@ h3 {
   .contact-actions .contact-label-full { display: none; }
   .contact-actions .contact-label-short { display: inline; }
 }
+/* Mensajes de Inicio: bloques legibles y lineas equilibradas en movil. */
+.hero-messages {
+  display: grid;
+  gap: 1rem;
+  max-width: 32rem;
+  margin-top: 1.75rem;
+}
+.hero-messages p {
+  margin: 0;
+  text-align: left;
+  text-wrap: pretty;
+}
+.hero-regulatory {
+  padding-left: 1rem;
+  border-left: 3px solid var(--lime);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.6;
+  letter-spacing: 0.025em;
+}
+.hero-service {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.hero-service strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+@media (max-width: 760px) {
+  .hero-messages {
+    max-width: 34rem;
+    margin-top: 1.5rem;
+    gap: 1.25rem;
+  }
+  .hero-regulatory {
+    text-wrap: balance;
+    line-height: 1.55;
+    letter-spacing: 0.015em;
+  }
+  .hero-service {
+    padding: 1rem 1.125rem;
+    background: var(--soft);
+    border-radius: 8px;
+    line-height: 1.65;
+    text-wrap: balance;
+  }
+}
