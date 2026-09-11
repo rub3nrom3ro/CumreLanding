@@ -927,7 +927,7 @@ h3 {
     gap: 17px;
   }
   .contact-copy {
-    min-width: 700px;
+    min-width: 0;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1821,4 +1821,18 @@ h3 {
   .risk-amount-main {
     font-size: clamp(26px, 7.5vw, 34px);
   }
+}
+
+/* Tres vías de contacto en una sola fila, utilizando todo el panel. */
+.contact-panel > .contact-copy { grid-column: 1 / -1; min-width: 0; }
+.contact-actions { display: grid; grid-template-columns: 1fr 1.2fr 1.7fr; gap: 12px; width: 100%; }
+.contact-actions > .button { width: 100%; min-width: 0; margin: 0; padding: 16px 12px; gap: 8px; white-space: normal; }
+.contact-label-full { min-width: 0; overflow-wrap: anywhere; }
+.contact-label-short { display: none; }
+@media (max-width: 760px) {
+  .contact-actions { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .contact-actions > .button { flex-direction: column; padding: 12px 4px; font-size: 12px; gap: 6px; }
+  .contact-actions > .button > svg:last-child { display: none; }
+  .contact-actions .contact-label-full { display: none; }
+  .contact-actions .contact-label-short { display: inline; }
 }
